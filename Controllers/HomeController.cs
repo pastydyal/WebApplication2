@@ -18,6 +18,12 @@ namespace WebApplication3.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Index(Book book)
+        {
+            return View(book);
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
